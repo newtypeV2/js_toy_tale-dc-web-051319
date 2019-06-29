@@ -28,7 +28,10 @@ class Toy{
     const likeButton = document.createElement("button");
     likeButton.innerText="Like <3";
     likeButton.addEventListener("click",likeHandler);
-    card.append(toyHeader,toyImage,toyLikes,likeButton);
+    card.appendChild(toyHeader);
+    card.appendChild(toyImage);
+    card.appendChild(toyLikes);
+    card.appendChild(likeButton);
     containerElement.append(card);
   }
 }
